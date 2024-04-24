@@ -8,9 +8,13 @@ body {
   }
   
   .form-container {
+    width: 98%;
+    margin: auto;
+    
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 60%;
+    left: 0;
+    /* margin: auto; */
     display: flex; /* Add display flex */
   }
   
@@ -32,7 +36,9 @@ body {
   }
   
   .card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translate(50px,-30px);
+    transition: 1s;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   }
   
   .profile-pic {
@@ -66,7 +72,9 @@ body {
   
   /* Styles for form elements */
   .form-container form {
-    padding: 20px;
+    padding: 100px;
+    margin: 20px;
+    width: 100%;
     display: flex; /* Add display flex */
     flex-direction: column; /* Add flex direction */
   }
@@ -74,14 +82,18 @@ body {
   .form-container form input,
   .form-container form textarea,
   .form-container form button {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
   }
-  
+  .form-container form input{
+  ;
+  }
   .form-container form button {
     background-color: #007bff;
+    width: 20%;
+    margin: auto;
     color: #fff;
     border: none;
     cursor: pointer;
